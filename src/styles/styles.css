@@ -1,0 +1,155 @@
+html,
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  background: linear-gradient(to bottom right, #a7d2cb, #f2d388);
+  height: 100vh;
+  color: #874c62;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li p {
+  margin: 15px 0;
+}
+
+.title {
+  padding: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.outer-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.card-wrapper {
+  background: #c98474;
+  padding: 1rem;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 800px;
+  margin-bottom: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.todo-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2d388;
+  padding: 0px 10px 0px 30px;
+  border-radius: 8px;
+  color: #874c62;
+  font-weight: bold;
+  font-size: 1.5rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.task-done {
+  background: #62dbc7;
+  box-shadow: #09ccee88 0px 5px 5px;
+}
+
+.task-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.task-input {
+  min-width: 60%;
+  padding: 10px;
+  outline: none;
+  border: 2px solid #818181;
+  border-radius: 0.2rem;
+}
+
+.task-input:focus {
+  border: 2px solid #fd8451;
+  box-shadow: 5px;
+}
+
+button {
+  border: none;
+  padding: 10px;
+  border-radius: 0.2rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.task-addBtn {
+  background-color: #f2d388;
+  color: #874c62;
+}
+
+.task-doneBtn {
+  background-color: #a7d2cb;
+  color: #874c62;
+  margin-right: 10px;
+}
+
+.task-notdoneBtn {
+  background-color: #611717;
+  color: #f2d388;
+  margin-right: 10px;
+}
+
+.task-removeBtn {
+  background-color: #874c62;
+  color: #f2d388;
+}
+
+button:hover {
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+
+.task-removeBtn:hover,
+.task-notdoneBtn:hover {
+  background-color: red;
+}
+
+.notasks {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .todo-items {
+    flex-direction: column;
+    padding: 0px 10px;
+    font-size: 1.2rem;
+    align-items: center;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+
+  .task-buttons {
+    padding-bottom: 10px;
+  }
+}
